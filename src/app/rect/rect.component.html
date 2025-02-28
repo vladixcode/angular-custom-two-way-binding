@@ -1,1 +1,8 @@
-<div id="rect" [style.width]="'200px'" [style.height]="'100px'" (click.kedown)="onReset()"></div>
+<div
+  id="rect"
+  [style.width]="size.width + 'px'"
+  [style.height]="size.height + 'px'"
+  (click)="onReset()"
+  (keyup)="onReset()"
+  tabindex="0"
+></div>
